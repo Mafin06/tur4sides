@@ -1,0 +1,41 @@
+# robots.txt для TUR-4-SIDES
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /private
+Disallow: /tmp
+Disallow: /*?*
+Disallow: /tour/*?*
+
+# Основные правила для поисковых систем
+User-agent: Yandex
+Allow: /
+Allow: /tour/
+Allow: /tours-russia
+Allow: /tours-bashkiria
+Allow: /gastronomic-tours
+Allow: /family-tours
+Disallow: /admin
+Disallow: /api
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+User-agent: Googlebot
+Allow: /
+Allow: /tour/
+Allow: /tours-russia
+Allow: /tours-bashkiria
+Allow: /gastronomic-tours
+Allow: /family-tours
+Disallow: /admin
+Disallow: /api
+
+# Карты сайта
+Sitemap: https://tur4sides.ru/sitemap.xml
+
+# Хост (для Яндекса)
+Host: https://tur4sides.ru
+
+# Частота обновления для основных разделов
+Crawl-delay: 5
